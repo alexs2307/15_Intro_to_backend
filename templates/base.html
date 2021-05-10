@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}WebApp with Flask using Jinja{% endblock title %}</title>
+
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+
+    <body>
+    {% block content %}
+        <h1>Welcome to the Steven Johnson Home Page</h1>
+        <h2>Stay tuned for more features!</h2>
+        <p>
+            <a href="/">Home</a>,
+            <a href="/about-me">About me</a>
+            <a href="/portfolio">Porfolio</a>
+        </p>
+        {% endblock content %}
+    </body>
+</html>
